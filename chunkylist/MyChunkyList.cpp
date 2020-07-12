@@ -180,6 +180,16 @@ void MyChunkyList::remove(int index){
     counter-=1;
 
 }
+
+std::string MyChunkyList::listToString(){
+    std::string str = "";
+    MyChunkyNode* next;
+    for(MyChunkyNode* node = start; node!=nullptr; node = next){
+        str+=node->nodeToString();
+        next = node->next();
+    }
+    return str;
+}
 /*MyChunkyList::~ChunkyList() {
 
 }*/

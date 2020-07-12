@@ -36,6 +36,7 @@ public:
   // Throws std::out_of_range if there is no such item.
   virtual void remove(int index);
 
+  std::string listToString();
 
   // Don't forget!
 };

@@ -37,24 +37,9 @@ int main(){
     list.insert(0,"bruh");
     list.insert(1,"hello");
     list.insert(2,"doode");
-    list.insert(2,"yeet");
+    list.insert(3,"yeet");
     //list.insert(0,"john");
-    cout<< list.head()->items()[0]<<endl;
-    cout<< list.head()->items()[1]<<endl;
-    cout<< list.head()->items()[2]<<endl;
-
-    cout<< list.head()->next()->items()[0]<<endl;
-    cout<< list.head()->next()->items()[1]<<endl;
-    cout<< list.head()->next()->items()[2]<<endl;
-
-    cout<< list.head()->next()->next()->items()[0]<<endl;
-    cout<< list.head()->next()->next()->items()[1]<<endl;
-    cout<< list.head()->next()->next()->items()[2]<<endl;
-
-
+    cout<<list.listToString()<<endl;
 
      
-
-    
-   
 }

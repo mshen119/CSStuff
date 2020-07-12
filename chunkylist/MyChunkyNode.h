@@ -25,6 +25,8 @@ public:
   virtual MyChunkyNode* next() const;
   void increment();
   int countItems();
+
+  std::string nodeToString();
   
   MyChunkyNode(MyChunkyNode* next, MyChunkyNode* prev, int chunksize);
 

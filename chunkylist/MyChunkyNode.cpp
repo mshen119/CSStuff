@@ -57,6 +57,19 @@ void MyChunkyNode::setprev(MyChunkyNode* prev){
     previous = prev;
 }
 
+std::string MyChunkyNode::nodeToString(){
+    std::string str = "";
+    str+="[";
+        for(int i = 0; i<this->mchunk; i++){
+            if((this->items()[i].empty()) || this->items()[i].compare("")==0)
+                str+="_,";
+            else
+                str += this->items()[i]+ ",";
+        }
+    str+="]";
+    return str;
+}
+
 MyChunkyNode::~MyChunkyNode() {
     
 }
